@@ -1,0 +1,70 @@
+<h1 mat-dialog-title>Añadir nuevo archivo</h1>
+<div mat-dialog-content>
+  <form [formGroup]="fileForm">
+    <mat-form-field appearance="outline">
+      <mat-label>Nombre del Archivo</mat-label>
+      <input
+      formControlName="fileName"
+      matInput
+      placeholder="Ingrese el nombre del archivo"
+      />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Cantidad de datos</mat-label>
+      <input
+        formControlName="quantity"
+        matInput
+        type="number"
+        placeholder="Ingrese el número de datos del archivo"
+      />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Estado del archivo</mat-label>
+      <mat-select formControlName="state" placeholder="Seleccione el tipo de formato">
+        <mat-option value="Completo">Completo</mat-option>
+        <mat-option value="Por Completar">Por Completar</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Fecha de registro del archivo</mat-label>
+      <input
+      formControlName="date"
+      matInput [matDatepicker]="picker"
+      />
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <label for=""><h3>Formato del Archivo</h3></label>
+    <mat-radio-group formControlName="format" class="example-radio-group">
+      <mat-radio-button
+        class="example-radio-button"
+        *ngFor="let formatList of FileformatList"
+        [value]="formatList"
+      >
+        {{ formatList }}
+      </mat-radio-button>
+    </mat-radio-group>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Observación</mat-label>
+      <textarea formControlName="comment" matInput></textarea>
+    </mat-form-field>
+
+    <input formControlName="file" type="file" />
+  </form>
+</div>
+<div mat-dialog-actions [align]="'end'">
+  <button mat-raised-button color="warn" mat-dialog-close>Cerrar</button>
+  <button
+    style="margin-left: 8px"
+    mat-raised-button
+    color="primary"
+    (click)="addFile()"
+  >
+    {{actionBtn}}
+  </button>
+</div>
