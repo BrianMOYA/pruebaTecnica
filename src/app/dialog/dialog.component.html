@@ -54,7 +54,17 @@
       <textarea formControlName="comment" matInput></textarea>
     </mat-form-field>
 
-    <input formControlName="file" type="file" />
+    <label>Seleccione un archivo: </label>
+      <button class="img-btn" (click)='imgInput.click()'>
+        <span>
+           Ingrese su archivo
+        </span>
+      <input formControlName="file" id="archivo1" #imgInput type="file" hidden (change)="getFile($event)">
+    </button>
+    <div id="tablares"></div>
+
+
+
   </form>
 </div>
 <div mat-dialog-actions [align]="'end'">
@@ -68,3 +78,4 @@
     {{actionBtn}}
   </button>
 </div>
+

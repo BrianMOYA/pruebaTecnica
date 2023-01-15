@@ -1,7 +1,11 @@
-import { ApiService } from './../services/api.service';
 import { Component, Inject, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+
+// Importación del servicio
+import { ApiService } from './../services/api.service';
+
+
 
 @Component({
   selector: 'app-dialog',
@@ -12,9 +16,11 @@ export class DialogComponent implements OnInit {
 
   FileformatList = ["Formato CSV", "Formarto TXT", "Formato PNG"];
   fileForm !: FormGroup;
-  actionBtn : string = "Guardar"
+  actionBtn : string = "Guardar";
+
   constructor(
     private formBuilder : FormBuilder,
+
     private api : ApiService,
     @Inject(MAT_DIALOG_DATA) public editData : any,
     private dialogRef : MatDialogRef<DialogComponent>
@@ -77,6 +83,11 @@ export class DialogComponent implements OnInit {
         alert("El archivo no se actualizo correctamente")
       }
     })
+  }
+
+  getFile($event:any){
+    const [file] = $event.target.files;
+    console.log(file)
   }
 
 }

@@ -1,0 +1,36 @@
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.img-btn{
+  padding: 10px !important;
+  background-color: rgb(7, 17, 105);
+  border: none;
+  border-radius: 10px;
+
+  span{
+    color: rgb(255, 255, 255);
+  }
+}
+
+table {
+  width: 100%;
+  tbody{
+    tr, td {
+      width: 25%;
+      text-align: left;
+      vertical-align: top;
+      border: 1px solid #000;
+      font-weight: bold;
+      background: rgb(238, 238, 235);
+      text-align: center;
+    }
+  }
+
+}
+
+
+

@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>Ingrese el archivo CSV para visualizarlo antes de registrarlo </h1>
+  <label>Visualizar archivo: </label>
+  <button class="img-btn" (click)='imgInput.click()'>
+    <span>
+      Ingrese su archivo
+    </span>
+    <input type="file" #imgInput (change)="onFileChange($event)"  multiple="false" hidden>
+  </button>
+
+  <table>
+    <tbody>
+      <tr *ngFor="let row of data">
+        <td  *ngFor="let cell of row">
+          {{cell}}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+

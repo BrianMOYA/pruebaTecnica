@@ -2,7 +2,7 @@
   "FileformatRegister": [
     {
       "fileName": "Ingresos",
-      "quantity": 250,
+      "quantity": 251,
       "state": "Por Completar",
       "date": "2023-01-15T05:00:00.000Z",
       "format": "Formato CSV",
@@ -19,6 +19,66 @@
       "comment": "Archivo completo",
       "file": "C:\\fakepath\\Libro1.csv",
       "id": 3
+    },
+    {
+      "fileName": "Empleados",
+      "quantity": 50,
+      "state": "Completo",
+      "date": "2023-01-15T05:00:00.000Z",
+      "format": "Formato CSV",
+      "comment": "El archivo esta completo",
+      "file": "C:\\fakepath\\Libro1.csv",
+      "id": 4
+    },
+    {
+      "fileName": "Productos",
+      "quantity": 80,
+      "state": "Por Completar",
+      "date": "2023-01-15T05:00:00.000Z",
+      "format": "Formato CSV",
+      "comment": "Faltan datos en la tabla",
+      "file": "C:\\fakepath\\Libro1.csv",
+      "id": 5
+    },
+    {
+      "fileName": "Inventario",
+      "quantity": 40,
+      "state": "Completo",
+      "date": "2023-01-15T05:00:00.000Z",
+      "format": "Formato CSV",
+      "comment": "El archivo esta completo",
+      "file": "C:\\fakepath\\Libro1.csv",
+      "id": 6
+    },
+    {
+      "fileName": "Mercado",
+      "quantity": 20,
+      "state": "Por Completar",
+      "date": "2023-01-14T05:00:00.000Z",
+      "format": "Formato CSV",
+      "comment": "El archivo no tiene todos los datos",
+      "file": "C:\\fakepath\\Libro1.csv",
+      "id": 7
+    },
+    {
+      "fileName": "Carros",
+      "quantity": 50,
+      "state": "Por Completar",
+      "date": "2023-01-17T05:00:00.000Z",
+      "format": "Formato CSV",
+      "comment": "Ninguna",
+      "file": "C:\\fakepath\\Libro1.csv",
+      "id": 10
+    },
+    {
+      "fileName": "Inventario",
+      "quantity": 80,
+      "state": "Completo",
+      "date": "2023-01-24T05:00:00.000Z",
+      "format": "Formato CSV",
+      "comment": "Todo completo",
+      "file": "C:\\fakepath\\Libro1.csv",
+      "id": 11
     }
   ],
   "comments": [

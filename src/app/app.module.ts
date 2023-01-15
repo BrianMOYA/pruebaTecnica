@@ -21,14 +21,19 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSortModule} from '@angular/material/sort';
+import {ViewFileComponent } from './view-file/view-file.component';
+import { MatTableExporterModule } from 'mat-table-exporter';
 
 // Importancion de servicios
 import {HttpClientModule} from '@angular/common/http';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
-    DialogComponent
+    DialogComponent,
+    ViewFileComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +54,8 @@ import {HttpClientModule} from '@angular/common/http';
     HttpClientModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    MatTableExporterModule
   ],
   providers: [
 
