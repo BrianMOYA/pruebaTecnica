@@ -1,10 +1,10 @@
 # Proceso de Instalación
 Después de clonar el repositorio de GitHub, procedemos abrir en el proyecto con Visual Studio Code, una vez dentro del proyecto ingresamos el siguiente código en la terminal de Visual Studio para instalar el node
-**npm install**
+**npm install** o de lo contrario **npm install --force**
 # Base de datos
 Luego de instalar node dentro del proyecto, procedemos a instalar el servidor de la base datos para que los registros se agreguen en la base del Json
-**npm install -g json-server (instalar el servidor de la base datos)**
-**json-server --watch data.json (Ejecutar e iniciar el servidor)**
+**npm install -g json-server (instalar el servidor de la base datos)** o de lo contrario **npm install -g json-server --force
+**json-server --watch data.json (Ejecutar e iniciar el servidor)** o de lo contrario **json-server --watch data.json --force
 # Ejecución y funcionamiento del  Webapp
 Para ejecutar el proyecto ingresa en la terminal de Visual Code y ejecuta el siguiente código para iniciar el servidor de angular
 **ng s -o**
