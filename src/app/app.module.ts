@@ -27,13 +27,17 @@ import { MatTableExporterModule } from 'mat-table-exporter';
 // Importancion de servicios
 import {HttpClientModule} from '@angular/common/http';
 
+// Componente protegido
+import { AdminUserComponent } from './admin-user/admin-user.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     DialogComponent,
-    ViewFileComponent
+    ViewFileComponent,
+    AdminUserComponent
   ],
   imports: [
     BrowserModule,

@@ -41,18 +41,8 @@
       "id": 5
     },
     {
-      "fileName": "Inventario",
-      "quantity": 40,
-      "state": "Completo",
-      "date": "2023-01-15T05:00:00.000Z",
-      "format": "Formato CSV",
-      "comment": "El archivo esta completo",
-      "file": "C:\\fakepath\\Libro1.csv",
-      "id": 6
-    },
-    {
       "fileName": "Mercado",
-      "quantity": 20,
+      "quantity": 21,
       "state": "Por Completar",
       "date": "2023-01-14T05:00:00.000Z",
       "format": "Formato CSV",
@@ -79,6 +69,16 @@
       "comment": "Todo completo",
       "file": "C:\\fakepath\\Libro1.csv",
       "id": 11
+    },
+    {
+      "fileName": "Memorias",
+      "quantity": 40,
+      "state": "Completo",
+      "date": "2023-01-15T05:00:00.000Z",
+      "format": "Formato CSV",
+      "comment": "esta completo",
+      "file": "C:\\fakepath\\mat-table-exporter.csv",
+      "id": 12
     }
   ],
   "comments": [
