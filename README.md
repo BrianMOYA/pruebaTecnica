@@ -1,13 +1,13 @@
 # Proceso de Instalación
 Después de clonar el repositorio de GitHub, procedemos abrir en el proyecto con Visual Studio Code, una vez dentro del proyecto ingresamos el siguiente código en la terminal de Visual Studio para instalar el node
-## npm install  
+*npm install* 
 # Base de datos
 Luego de instalar node dentro del proyecto, procedemos a instalar el servidor de la base datos para que los registros se agreguen en la base del Json
-## npm install -g json-server (instalar el servidor de la base datos)
-## json-server –watch data.json (Ejecutar e iniciar el servidor)
+*npm install -g json-server (instalar el servidor de la base datos)*
+*json-server –watch data.json (Ejecutar e iniciar el servidor)*
 # Ejecución y funcionamiento del  Webapp
 Para ejecutar el proyecto ingresa en la terminal de Visual Code y ejecuta el siguiente código para iniciar el servidor de angular
-## ng s -o
+*ng s -o*
 1.	Luego de que inicie el servidor, se podrá evidenciar la ejecución del proyecto, donde se encontrará el Header (Encabezado) con el título del proyecto “Prueba Técnica”
 2.	Debajo del Header (Encabezado), se muestra un título “Ingrese el archivo CSV para visualizarlo antes de registrarlo”, el cual especifica que en la parte inferior se encuentra un botón donde le permitirá subir un archivo CSV y poder visualizarlo.
 3.	A continuación, se muestra un título “Agrega, consulta, modifica y elimina los archivos registrados”, el cual especifica, que en la parte inferior se encuentra un apartado donde se evidencian los registros realizados, un espacio para realizar consultas, y dos botones con la función de eliminar y otro de editar. Por último, en la tabla podremos cambiar de paginación dependiendo de los registros que tengamos almacenados.
